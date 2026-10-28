@@ -1,79 +1,78 @@
 # skills-esp
 
-A small collection of GitHub Copilot skills and productivity scripts designed to help with academic writing, note-taking, content organization, and automatic transcription workflows.
+Une petite collection de skills GitHub Copilot et de scripts de productivité conçus pour aider à la rédaction académique, à la prise de notes, à l'organisation du contenu et aux flux de transcription automatisée.
 
-## Overview
+## Vue d'ensemble
 
-This repository brings together a set of custom skills and utilities for common workflows such as:
+Ce dépôt regroupe un ensemble de compétences personnalisées et d'utilitaires pour des flux de travail courants tels que :
 
-- formatting academic documents
-- generating visual banners for Notion pages
-- capturing and structuring notes for Notion
-- recording and organizing session notes
-- transcribing audio or video files with Whisper
+- la mise en forme de documents académiques
+- la génération de bannières visuelles pour les pages Notion
+- la capture et la structuration de notes pour Notion
+- l'enregistrement et l'organisation des notes de session
+- la transcription de fichiers audio ou vidéo avec Whisper
 
-## Repository contents
+## Contenu du dépôt
 
-- `dgi-academic-formatter.skill` — a skill for formatting academic content in a cleaner, more structured style.
-- `notion-banner-creator.skill` — a skill to generate themed banner content for Notion pages.
-- `notion-note-taker.skill` — a skill for collecting and organizing notes in Notion.
-- `obs-note-taker.skill` — a skill for capturing notes from OBS-related workflows.
-- `transcription.py` — a Python script that transcribes media files using OpenAI Whisper.
+- `dgi-academic-formatter.skill` — une skill pour formater un contenu académique de manière plus claire et plus structurée.
+- `notion-banner-creator.skill` — une skill pour générer du contenu de bannière thématique pour les pages Notion.
+- `notion-note-taker.skill` — une skill pour collecter et organiser des notes dans Notion.
+- `obs-note-taker.skill` — une skill pour capturer des notes dans le cadre de workflows liés à OBS.
+- `transcription.py` — un script Python qui transcrit des fichiers média à l'aide de Whisper d'OpenAI.
 
-## Getting started
+## Premiers pas
 
-### 1. Clone the repository
+### 1. Cloner le dépôt
 
 ```bash
 git clone https://github.com/maimounadiallo4/skills-esp.git
 cd skills-esp
 ```
 
-### 2. Use the skills
+### 2. Utiliser les skills
 
-The `.skill` files are intended to be used with GitHub Copilot skills or custom agent workflows. Copy them into your configured skill directory or use them in a GitHub Copilot environment that supports custom skills.
+Les fichiers `.skill` sont destinés à être utilisés avec les skills GitHub Copilot ou des workflows d'agent personnalisés. Copiez-les dans votre dossier de skills configuré ou utilisez-les dans un environnement GitHub Copilot prenant en charge les skills.
 
-### 3. Run the transcription script
+### 3. Exécuter le script de transcription
 
-Install the required dependency:
+Installez la dépendance requise :
 
 ```bash
 pip install git+https://github.com/openai/whisper.git
 ```
 
-Then update the file path in `transcription.py` and run:
+Ensuite, modifiez le chemin du fichier dans `transcription.py` puis exécutez :
 
 ```bash
 python transcription.py
 ```
 
-If you are using Google Colab, the script also includes a Drive-mount example for loading files from Google Drive.
+Si vous utilisez Google Colab, le script inclut également un exemple de montage de Drive pour charger des fichiers depuis Google Drive.
 
-## Example workflow
+## Exemple de workflow
 
-1. Record a lecture or meeting.
-2. Transcribe the audio/video using Whisper.
-3. Review or clean the generated transcript.
-4. Use a skill to organize the content in Notion or create a formatted academic version.
-5. Publish or share the final material in your preferred format.
+1. Enregistrez un cours ou une réunion.
+2. Transcrivez l'audio ou la vidéo avec Whisper.
+3. Vérifiez ou nettoyez la transcription générée.
+4. Utilisez une skill pour organiser le contenu dans Notion ou créer une version académique mise en forme.
+5. Publiez ou partagez le matériel final dans le format de votre choix.
 
 ## Notes
 
-- This project is oriented toward productivity and automation workflows.
-- Some files are tailored for French academic and note-taking use cases.
-- The transcription script is especially useful for lecture capture and documentation tasks.
+- Ce projet est orienté vers les workflows de productivité et d'automatisation.
+- Certains fichiers sont adaptés à des cas d'usage académiques et de prise de notes en français.
+- Le script de transcription est particulièrement utile pour la capture de cours et les tâches de documentation.
 
-## License
+## Licence
 
-This project does not currently declare a license. If you plan to share or reuse it publicly, consider adding an appropriate license file such as MIT or Apache 2.0.
+Ce projet ne déclare pas actuellement de licence. Si vous envisagez de le partager ou de le réutiliser publiquement, pensez à ajouter un fichier de licence approprié tel que MIT ou Apache 2.0.
 
-## Future improvements
+## Améliorations futures
 
-Potential additions include:
+Des ajouts potentiels incluent :
 
-- a dedicated `requirements.txt` for Python dependencies
-- usage examples for each skill
-- screenshots or sample outputs
-- a troubleshooting section
-- localization for English/French documentation
-
+- un `requirements.txt` dédié pour les dépendances Python
+- des exemples d'utilisation pour chaque skill
+- des captures d'écran ou des exemples de résultats
+- une section de dépannage
+- la localisation de la documentation en anglais/français
