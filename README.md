@@ -1,6 +1,7 @@
-# skills-esp
+# Utilitaires
 
-Une petite collection de skills GitHub Copilot et de scripts de productivité conçus pour aider à la rédaction académique, à la prise de notes, à l'organisation du contenu et aux flux de transcription automatisée.
+Une petite collection de skills et de scripts de productivité conçus pour aider à la rédaction académique, à la prise de notes, à l'organisation du contenu et aux flux de transcription automatisée.
+Part of "Kit de survie au DGI" !
 
 ## Vue d'ensemble
 
@@ -9,16 +10,16 @@ Ce dépôt regroupe un ensemble de compétences personnalisées et d'utilitaires
 - la mise en forme de documents académiques
 - la génération de bannières visuelles pour les pages Notion
 - la capture et la structuration de notes pour Notion
-- l'enregistrement et l'organisation des notes de session
+- l'enregistrement et l'organisation des notes de cours
 - la transcription de fichiers audio ou vidéo avec Whisper
 
 ## Contenu du dépôt
 
-- `dgi-academic-formatter.skill` — une skill pour formater un contenu académique de manière plus claire et plus structurée.
-- `notion-banner-creator.skill` — une skill pour générer du contenu de bannière thématique pour les pages Notion.
-- `notion-note-taker.skill` — une skill pour collecter et organiser des notes dans Notion.
-- `obs-note-taker.skill` — une skill pour capturer des notes dans le cadre de workflows liés à OBS.
-- `transcription.py` — un script Python qui transcrit des fichiers média à l'aide de Whisper d'OpenAI.
+- `dgi-academic-formatter.skill` : skill pour rendre un document word généré avec une IA (like Claude) plus professionnel.
+- `notion-banner-creator.skill` : skill pour générer des bannières thématiques pour les pages Notion.
+- `notion-note-taker.skill` : skill pour transformer la transcription d'un cours en notes structurées intégrées directement dans Notion.
+- `obs-note-taker.skill` : skill pour transformer la transcription d'un cours en notes markdown structurées à mettre dans Obsidian.
+- `transcription.py` : script Python à exécuter sur Google colab, qui transcrit les enregistrements importés dans google drive à l'aide de Whisper d'OpenAI.
 
 ## Premiers pas
 
@@ -31,48 +32,30 @@ cd skills-esp
 
 ### 2. Utiliser les skills
 
-Les fichiers `.skill` sont destinés à être utilisés avec les skills GitHub Copilot ou des workflows d'agent personnalisés. Copiez-les dans votre dossier de skills configuré ou utilisez-les dans un environnement GitHub Copilot prenant en charge les skills.
+Téléversez les fichiers `.skill` sur claude.ai par exemple afin qu'il les utilise au besoin, au lieu de devoir tout le temps copier coller un prompt.
 
 ### 3. Exécuter le script de transcription
 
-Installez la dépendance requise :
+Si vous utilisez Google Colab, il faudra juste autoriser le montage de Drive pour charger des fichiers depuis Google Drive. 
 
-```bash
-pip install git+https://github.com/openai/whisper.git
-```
+## LE workflow à suivre
 
-Ensuite, modifiez le chemin du fichier dans `transcription.py` puis exécutez :
-
-```bash
-python transcription.py
-```
-
-Si vous utilisez Google Colab, le script inclut également un exemple de montage de Drive pour charger des fichiers depuis Google Drive.
-
-## Exemple de workflow
-
-1. Enregistrez un cours ou une réunion.
-2. Transcrivez l'audio ou la vidéo avec Whisper.
-3. Vérifiez ou nettoyez la transcription générée.
-4. Utilisez une skill pour organiser le contenu dans Notion ou créer une version académique mise en forme.
-5. Publiez ou partagez le matériel final dans le format de votre choix.
-
-## Notes
-
-- Ce projet est orienté vers les workflows de productivité et d'automatisation.
-- Certains fichiers sont adaptés à des cas d'usage académiques et de prise de notes en français.
-- Le script de transcription est particulièrement utile pour la capture de cours et les tâches de documentation.
+1. Enregistrer un cours.
+2. Mettre la vidéo sur Google Drive.
+3. Ajouter un raccourci du dossier contenant les enregistrements dans "Mon Drive".
+4. Uploader le script de transcription dans colab.
+5. Activer GPU T4.
+6. Autoriser le montage de google drive.
+7. Cliquer sur l'icône dossier de la barre latérale gauche, attendre que ça se charge pour que le dossier `drive` apparaisse.
+8. Chercher la vidéo que vous voulez transcrire en navigant tranquillement vers son emplacement.
+9. Cliquer sur le menu trois points du fichier de la vidéo.
+10. Copier le chemin d'accès.
+11. Le mettre au niveau du champ de saisie qui apparaît à côté du script.
+12. Exécuter.
+13. Copier le résultat de la cellule.
+14. Allez sur claude.ai pour y coller la transcription.
+15. Utilisez une skill pour mettre au propre le contenu dans Notion ou Obsidian.
 
 ## Licence
 
-Ce projet ne déclare pas actuellement de licence. Si vous envisagez de le partager ou de le réutiliser publiquement, pensez à ajouter un fichier de licence approprié tel que MIT ou Apache 2.0.
-
-## Améliorations futures
-
-Des ajouts potentiels incluent :
-
-- un `requirements.txt` dédié pour les dépendances Python
-- des exemples d'utilisation pour chaque skill
-- des captures d'écran ou des exemples de résultats
-- une section de dépannage
-- la localisation de la documentation en anglais/français
+MIT.
