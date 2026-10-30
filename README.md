@@ -22,14 +22,8 @@ Ce dépôt fait partie intégrante du **Kit de survie au DGI** !
 
 Les compétences sont livrées sous la forme d'archives `.zip` standardisées au format plugin Claude.
 
-### Méthode 1 : Sur Claude.ai (Web / Pro / Team)
 1. Téléchargez le fichier `.zip` du skill qui vous intéresse (ou clonez ce dépôt).
-2. Rendez-vous sur [Claude.ai](https://claude.ai) dans vos paramètres (**Settings** > **Capabilities / Skills**) ou importez l'archive dans vos outils de projet.
-3. Vous pouvez également extraire le fichier `SKILL.md` contenu dans le `.zip` et le coller directement dans les instructions personnalisées (*System Prompt* ou *Project Instructions*).
-
-### Méthode 2 : Sur Claude Desktop / Cowork / Claude Code
-1. Placez simplement l'archive `.zip` ou décompressez le dossier du skill dans votre répertoire de plugins/compétences.
-2. Le fichier `.claude-plugin/plugin.json` est automatiquement reconnu.
+2. Rendez-vous sur [Claude.ai](https://claude.ai) dans **Personnalisation** > **Skills** > **Ajouter** > **Importer un skill** puis sélectionnez le zip.
 
 ---
 
