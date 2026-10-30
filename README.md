@@ -1,61 +1,66 @@
-# Utilitaires
+# Utilitaires — Kit de survie au DGI 🎓
 
-Une petite collection de skills et de scripts de productivité conçus pour aider à la rédaction académique, à la prise de notes, à l'organisation du contenu et aux flux de transcription automatisés.
-Part of "Kit de survie au DGI" !
+Une collection d'outils, de compétences IA (**skills / plugins**) et de scripts de productivité conçus pour accompagner les étudiants dans la rédaction académique, la prise de notes automatique, la transcription et l'organisation de leurs cours.
 
-## Vue d'ensemble
+Ce dépôt fait partie intégrante du **Kit de survie au DGI** !
 
-Ce dépôt regroupe un ensemble de compétences personnalisées et d'utilitaires pour des flux de travail courants tels que :
+---
 
-- la mise en forme de documents académiques
-- la génération de bannières visuelles pour les pages Notion
-- la capture et la structuration de notes pour Notion
-- l'enregistrement et l'organisation des notes de cours
-- la transcription de fichiers audio ou vidéo avec Whisper
+## 📦 Contenu du dépôt
 
-## Contenu du dépôt
+| Fichier | Type | Description |
+| :--- | :--- | :--- |
+| **`dgi-academic-formatter.zip`** | Skill Claude | Met en conformité les rapports de TP, mémoires, CDC et documents académiques selon les normes officielles du **DGI / ESP Dakar**. |
+| **`notion-banner-creator.zip`** | Skill Claude | Génère des bannières panoramiques esthétiques (ratio 7:1) adaptées au recadrage et aux icônes des pages Notion. |
+| **`notion-note-taker.zip`** | Skill Claude | Transforme une transcription brute de cours en fiche structurée pour **Notion**. Optimisé pour les templates Notion (DIC1 & DIC2 Informatique) avec intégration de la base de devoirs ou to-do list native. |
+| **`obs-note-taker.zip`** | Skill Claude | Alternative pour les adeptes d'**Obsidian** : convertit une transcription en fiche Markdown complète (callouts, LaTeX, diagrammes Mermaid). |
+| **`transcription.py`** | Script Python | Script prêt à l'emploi pour **Google Colab**, permettant de transcrire n'importe quel cours audio ou vidéo depuis Google Drive avec Whisper d'OpenAI (sur GPU T4 gratuit). |
 
-- `dgi-academic-formatter.skill` : skill pour rendre un document word généré avec une IA (like Claude) plus professionnel.
-- `notion-banner-creator.skill` : skill pour générer des bannières thématiques pour les pages Notion.
-- `notion-note-taker.skill` : skill pour transformer la transcription d'un cours en notes structurées intégrées directement dans Notion.
-- `obs-note-taker.skill` : skill pour transformer la transcription d'un cours en notes markdown structurées à mettre dans Obsidian.
-- `transcription.py` : script Python à exécuter sur Google colab, qui transcrit les enregistrements importés dans google drive à l'aide de Whisper d'OpenAI.
+---
 
-## Premiers pas
+## 🚀 Comment installer et utiliser les skills (.zip)
 
-### 1. Cloner le dépôt
+Les compétences sont livrées sous la forme d'archives `.zip` standardisées au format plugin Claude.
 
-```bash
-git clone https://github.com/maimounadiallo4/skills-esp.git
-cd skills-esp
-```
+### Méthode 1 : Sur Claude.ai (Web / Pro / Team)
+1. Téléchargez le fichier `.zip` du skill qui vous intéresse (ou clonez ce dépôt).
+2. Rendez-vous sur [Claude.ai](https://claude.ai) dans vos paramètres (**Settings** > **Capabilities / Skills**) ou importez l'archive dans vos outils de projet.
+3. Vous pouvez également extraire le fichier `SKILL.md` contenu dans le `.zip` et le coller directement dans les instructions personnalisées (*System Prompt* ou *Project Instructions*).
 
-### 2. Utiliser les skills
+### Méthode 2 : Sur Claude Desktop / Cowork / Claude Code
+1. Placez simplement l'archive `.zip` ou décompressez le dossier du skill dans votre répertoire de plugins/compétences.
+2. Le fichier `.claude-plugin/plugin.json` est automatiquement reconnu.
 
-Téléversez les fichiers `.skill` sur claude.ai par exemple afin qu'il les utilise au besoin, au lieu de devoir tout le temps copier coller un prompt.
+---
 
-### 3. Exécuter le script de transcription
+## 💡 Quel outil de prise de notes choisir ?
 
-Si vous utilisez Google Colab, il faudra juste autoriser le montage de Drive pour charger des fichiers depuis Google Drive. 
+- **Vous utilisez Notion ?**
+  👉 Utilisez **`notion-note-taker.zip`**. Si vous utilisez le template Notion du Kit (DIC1 ou DIC2 Informatique), il crée et relie automatiquement les devoirs dans votre base *« Travail (cours · TD · TP) »*. Si vous avez un autre espace Notion, il insère automatiquement une to-do list interactive dans la page du cours sans blocage.
+- **Vous n'utilisez pas Notion ou préférez Obsidian ?**
+  👉 Utilisez **`obs-note-taker.zip`**. Il génère un document Markdown autonome prêt à glisser dans votre coffre Obsidian, complet avec métadonnées, callouts et formules.
 
-## LE workflow à suivre
+---
 
-1. Enregistrer un cours.
-2. Mettre la vidéo sur Google Drive.
-3. Ajouter un raccourci du dossier contenant les enregistrements dans "Mon Drive".
-4. Uploader le script de transcription dans colab.
-5. Activer GPU T4.
-6. Autoriser le montage de google drive.
-7. Cliquer sur l'icône dossier de la barre latérale gauche, attendre que ça se charge pour que le dossier `drive` apparaisse.
-8. Chercher la vidéo que vous voulez transcrire en navigant tranquillement vers son emplacement.
-9. Cliquer sur le menu trois points du fichier de la vidéo.
-10. Copier le chemin d'accès.
-11. Le mettre au niveau du champ de saisie qui apparaît à côté du script.
-12. Exécuter.
-13. Copier le résultat de la cellule.
-14. Allez sur claude.ai pour y coller la transcription.
-15. Utilisez une skill pour mettre au propre le contenu dans Notion ou Obsidian.
+## 🔄 Le Workflow complet (De l'amphi à la fiche de révision)
 
-## Licence
+1. **Enregistrer le cours** (audio ou vidéo sur votre smartphone ou PC).
+2. **Déposer le fichier sur Google Drive**.
+3. **Ouvrir Google Colab** et importer [`transcription.py`](file:///c:/Users/HP/Zbook/15u/Documents/skills-esp/transcription.py).
+4. **Configurer l'environnement Colab** :
+   - Menu *Exécution* > *Modifier le type d'exécution* > Sélectionner **GPU T4** (gratuit et rapide).
+   - Exécuter la cellule pour installer Whisper et autoriser l'accès à Google Drive.
+5. **Indiquer votre fichier** :
+   - Dans le volet latéral gauche de Colab, ouvrez l'onglet *Fichiers* (`drive/MyDrive/...`).
+   - Clic droit sur votre enregistrement > **Copier le chemin d'accès**.
+   - Collez ce chemin dans la variable `chemin_fichier` et lancez la transcription.
+6. **Structurer les notes avec Claude** :
+   - Copiez le texte transcrit généré par Whisper.
+   - Sur Claude, activez **`notion-note-taker`** (ou **`obs-note-taker`**) et collez la transcription.
+   - Claude génère la fiche de cours complète et structurée en une seule passe !
 
-MIT.
+---
+
+## 📄 Licence
+
+Distribué sous licence **MIT**. Libre d'utilisation et d'adaptation.
