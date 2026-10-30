@@ -8,6 +8,7 @@ from google.colab import drive
 drive.mount('/content/drive')
 
 # 3. Paramètre du fichier et Transcription
+# Tout le code qui suit doit être placé dans une deuxième cellule.
 chemin_fichier = "/content/drive/MyDrive/Enregistrement cours DIC2 Génie Informatique/POO avancée/Poo-Cours1.mp4" #@param {type:"string"}
 
 !whisper "{chemin_fichier}" --model medium --language French
