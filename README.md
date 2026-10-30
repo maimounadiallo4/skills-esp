@@ -14,7 +14,7 @@ Ce dépôt fait partie intégrante du **Kit de survie au DGI** !
 | **`notion-banner-creator.zip`** | Skill Claude | Génère des bannières panoramiques esthétiques (ratio 7:1) adaptées au recadrage et aux icônes des pages Notion. |
 | **`notion-note-taker.zip`** | Skill Claude | Transforme une transcription brute de cours en fiche structurée pour **Notion**. Optimisé pour les templates Notion (DIC1 & DIC2 Informatique) avec intégration de la base de devoirs ou to-do list native. |
 | **`obs-note-taker.zip`** | Skill Claude | Alternative pour les adeptes d'**Obsidian** : convertit une transcription en fiche Markdown complète (callouts, LaTeX, diagrammes Mermaid). |
-| **`transcription.py`** | Script Python | Script prêt à l'emploi pour **Google Colab**, permettant de transcrire n'importe quel cours audio ou vidéo depuis Google Drive avec Whisper d'OpenAI (sur GPU T4 gratuit). |
+| **`transcription.ipynb`** | Notebook Colab | Notebook interactif prêt à l'emploi pour **Google Colab**, permettant de transcrire n'importe quel cours audio ou vidéo depuis Google Drive avec Whisper d'OpenAI (sur GPU T4 gratuit). |
 
 ---
 
@@ -46,7 +46,7 @@ Les compétences sont livrées sous la forme d'archives `.zip` standardisées au
 
 1. **Enregistrer le cours** (audio ou vidéo sur votre smartphone ou PC).
 2. **Déposer le fichier sur Google Drive**.
-3. **Ouvrir Google Colab** et importer [`transcription.py`](file:///c:/Users/HP/Zbook/15u/Documents/skills-esp/transcription.py).
+3. **Ouvrir Google Colab** et importer [`transcription.ipynb`](file:///c:/Users/HP/Zbook/15u/Documents/skills-esp/transcription.ipynb).
 4. **Configurer l'environnement Colab** :
    - Menu *Exécution* > *Modifier le type d'exécution* > Sélectionner **GPU T4** (gratuit et rapide).
    - Exécuter la cellule pour installer Whisper et autoriser l'accès à Google Drive.
