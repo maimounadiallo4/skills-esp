@@ -41,9 +41,9 @@ Les compétences sont livrées sous la forme d'archives `.zip` standardisées au
 
 1. **Enregistrer le cours** (audio ou vidéo sur votre smartphone ou PC).
 2. **Déposer le fichier sur Google Drive**.
-3. **Ouvrir Google Colab** et importer [`transcription.ipynb`](file:///c:/Users/HP/Zbook/15u/Documents/skills-esp/transcription.ipynb).
+3. **Ouvrir Google Colab** et importer `transcription.ipynb`.
 4. **Configurer l'environnement Colab** :
-   - Menu *Exécution* > *Modifier le type d'exécution* > Sélectionner **GPU T4** (gratuit et rapide).
+   - Menu *Exécution* > *Modifier le type d'exécution* > Sélectionner **GPU T4** (quota gratuit et rapide).
    - Exécuter la cellule pour installer Whisper et autoriser l'accès à Google Drive.
 5. **Indiquer votre fichier** :
    - Dans le volet latéral gauche de Colab, ouvrez l'onglet *Fichiers* (`drive/MyDrive/...`).
@@ -53,6 +53,8 @@ Les compétences sont livrées sous la forme d'archives `.zip` standardisées au
    - Copiez le texte transcrit généré par Whisper.
    - Sur Claude, activez **`notion-note-taker`** (ou **`obs-note-taker`**) et collez la transcription.
    - Claude génère la fiche de cours complète et structurée en une seule passe !
+
+> 📖 **Envie d'aller plus loin ?** La méthode complète (stratégies de révision, création d'examens d'entraînement avec NotebookLM, optimisation du travail académique et avantages étudiants) est détaillée dans le **Guide du Kit de survie au DGI**.
 
 ---
 
