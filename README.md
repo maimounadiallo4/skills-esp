@@ -28,6 +28,16 @@ Les compétences sont livrées sous la forme d'archives `.zip` standardisées au
 
 ---
 
+## 🎯 Pourquoi utiliser `youtube_playlist_to_notebooklm.ipynb` ?
+
+Lorsque vous suivez une playlist YouTube de cours, de TP ou de vulgarisation technique, il arrive souvent de bloquer sur un concept ou une ligne de code :
+- **Le créateur n'est pas joignable** pour répondre à vos questions en direct.
+- **Les IA généralistes répondent souvent à côté** car elles n'ont pas le contexte exact, la terminologie ou la progression choisie par l'enseignant.
+
+**La solution NotebookLM :** En injectant la playlist complète comme sources dans **Google NotebookLM**, l'IA s'ancre strictement (*grounding*) sur le contenu de vos vidéos. Vous disposez ainsi d'un tuteur personnalisé capable de clarifier n'importe quel point **avec les explications et exemples précis de votre cours**.
+
+Ce script extrait l'ensemble des URLs de la playlist en quelques secondes, prêt à être copié-collé d'un coup dans NotebookLM !
+
 ## 💡 Quel outil de prise de notes choisir ?
 
 - **Vous utilisez Notion ?**
