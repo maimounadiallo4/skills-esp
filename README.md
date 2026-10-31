@@ -15,6 +15,7 @@ Ce dépôt fait partie intégrante du **Kit de survie au DGI** !
 | **`notion-note-taker.zip`** | Skill Claude | Transforme une transcription brute de cours en fiche structurée pour **Notion**. Optimisé pour les templates Notion (DIC1 & DIC2 Informatique) avec intégration de la base de devoirs ou to-do list native. |
 | **`obs-note-taker.zip`** | Skill Claude | Alternative pour les adeptes d'**Obsidian** : convertit une transcription en fiche Markdown complète (callouts, LaTeX, diagrammes Mermaid). |
 | **`transcription.ipynb`** | Notebook Colab | Notebook interactif prêt à l'emploi pour **Google Colab**, permettant de transcrire n'importe quel cours audio ou vidéo depuis Google Drive avec Whisper d'OpenAI (sur GPU T4 gratuit). |
+| **`youtube_playlist_to_notebooklm.ipynb`** | Notebook Colab | Extrait instantanément tous les liens vidéo d'une playlist YouTube pour les importer en un seul copier-coller comme sources dans **Google NotebookLM** (avec gestion de la limite de 50 sources). |
 
 ---
 
