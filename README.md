@@ -2,7 +2,7 @@
 
 Une collection d'outils, de compétences IA (**skills / plugins**) et de scripts de productivité conçus pour accompagner les étudiants dans la rédaction académique, la prise de notes automatique, la transcription et l'organisation de leurs cours.
 
-Ce dépôt fait partie intégrante du **Kit de survie au DGI** !
+Ce dépôt fait partie intégrante du [**Kit de survie au DGI**](https://minalab.app/ebooks/kit-de-survie-au-dgi-1801) !
 
 ---
 
@@ -54,7 +54,7 @@ Les compétences sont livrées sous la forme d'archives `.zip` standardisées au
    - Sur Claude, activez **`notion-note-taker`** (ou **`obs-note-taker`**) et collez la transcription.
    - Claude génère la fiche de cours complète et structurée en une seule passe !
 
-> 📖 **Envie d'aller plus loin ?** La méthode complète (stratégies de révision, création d'examens d'entraînement avec NotebookLM, optimisation du travail académique et avantages étudiants) est détaillée dans le **Guide du Kit de survie au DGI**.
+> 📖 **Envie d'aller plus loin ?** La méthode complète (stratégies de révision, création d'examens d'entraînement avec NotebookLM, optimisation du travail académique et avantages étudiants) est détaillée dans le [**Guide du Kit de survie au DGI**](https://minalab.app/ebooks/kit-de-survie-au-dgi-1801).
 
 ---
 
