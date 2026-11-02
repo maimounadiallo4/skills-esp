@@ -10,6 +10,7 @@ Ce dépôt fait partie intégrante du [**Kit de survie au DGI**](https://minalab
 
 | Fichier | Type | Description |
 | :--- | :--- | :--- |
+| **`active-learning-tutor.zip`** | Skill Claude | Tuteur pédagogique et coach d'apprentissage actif : découpe le cours pas à pas, pose des questions socratiques ciblées, évalue et note rigoureusement (sur 20) sans jamais avancer sans votre validation. |
 | **`dgi-academic-formatter.zip`** | Skill Claude | Met en conformité les rapports de TP, mémoires, CDC et documents académiques selon les normes officielles du **DGI / ESP Dakar**. |
 | **`notion-banner-creator.zip`** | Skill Claude | Génère des bannières panoramiques esthétiques (ratio 7:1) adaptées au recadrage et aux icônes des pages Notion. |
 | **`notion-note-taker.zip`** | Skill Claude | Transforme une transcription brute de cours en fiche structurée pour **Notion**. Optimisé pour les templates Notion (DIC1 & DIC2 Informatique) avec intégration de la base de devoirs ou to-do list native. |
