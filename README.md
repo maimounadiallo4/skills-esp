@@ -17,6 +17,7 @@ Ce dépôt fait partie intégrante du [**Kit de survie au DGI**](https://minalab
 | **`obs-note-taker.zip`** | Skill Claude | Alternative pour les adeptes d'**Obsidian** : convertit une transcription en fiche Markdown complète (callouts, LaTeX, diagrammes Mermaid). |
 | **`transcription.ipynb`** | Notebook Colab | Notebook interactif prêt à l'emploi pour **Google Colab**, permettant de transcrire n'importe quel cours audio ou vidéo depuis Google Drive avec Whisper d'OpenAI (sur GPU T4 gratuit). |
 | **`youtube_playlist_to_notebooklm.ipynb`** | Notebook Colab | Extrait instantanément tous les liens vidéo d'une playlist YouTube pour les importer en un seul copier-coller comme sources dans **Google NotebookLM**. |
+| **`PROMPTS.md`** | Bibliothèque Markdown | Version texte intégrale de tous les prompts pour les utilisateurs de **ChatGPT**, **Gemini**, **DeepSeek** ou Claude gratuit (sans importation de .zip). |
 
 ---
 
@@ -26,6 +27,9 @@ Les compétences sont livrées sous la forme d'archives `.zip` standardisées au
 
 1. Téléchargez le fichier `.zip` du skill qui vous intéresse (ou clonez ce dépôt).
 2. Rendez-vous sur [Claude.ai](https://claude.ai) dans **Personnalisation** > **Skills** > **Ajouter** > **Importer un skill** puis sélectionnez le zip.
+
+> 💡 **Vous utilisez ChatGPT, Gemini, DeepSeek ou Claude gratuit ?**
+> Vous n'avez pas besoin des archives `.zip` ! Rendez-vous directement sur [`PROMPTS.md`](PROMPTS.md) pour copier-coller les prompts prêts à l'emploi.
 
 ---
 
